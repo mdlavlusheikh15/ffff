@@ -1,0 +1,22 @@
+This file guides you on how to manually create your first super admin account in Firebase using the UID you provided.
+
+**Step 1: Go to your Firestore Database**
+
+1.  Open your project in the **Firebase Console**.
+2.  Navigate to the **Firestore Database** section from the left-hand menu.
+
+**Step 2: Create the Super Admin Document**
+
+1.  In Firestore, find and select the `admins` collection. If it doesn't exist, create it by clicking **"Start collection"**.
+2.  Click **"Add document"**.
+3.  For the **Document ID**, paste the UID you provided: `daDziXXgSFfoyrlUMf44zoM4dhd2`
+4.  Add the following fields to the document:
+    *   `name` (Type: string) -> **Value:** `Super Admin`
+    *   `email` (Type: string) -> **Value:** `mdlavlusheikh220@gmail.com`
+    *   `role` (Type: string) -> **Value:** `super-admin`
+    *   `status` (Type: string) -> **Value:** `approved`
+    *   `avatar` (Type: string) -> **Value:** `https://picsum.photos/80/80?random=1`
+    *   `createdAt` (Type: timestamp) -> **Value:** Set it to the current date and time.
+5.  Click **"Save"**.
+
+After completing these steps, the user with the email `mdlavlusheikh220@gmail.com` will have super admin privileges and will be able to log in to access the super admin dashboard.
